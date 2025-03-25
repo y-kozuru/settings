@@ -1,0 +1,43 @@
+{
+	// フォント
+	"editor.fontFamily": "Roboto Mono, Noto Sans JP",
+	"editor.fontSize": 15,
+	"editor.letterSpacing": 0.5,
+	"editor.lineHeight": 1.7,
+	"terminal.integrated.fontSize": 15,
+
+	// インデント
+	"editor.insertSpaces": false,
+	"editor.tabSize": 6,
+	"[python]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+
+	// 一行の文字数
+	"editor.rulers": [80],
+
+	// 不要な機能を無効にする。
+	"breadcrumbs.enabled": false,
+	"chat.commandCenter.enabled": false,
+	"editor.bracketPairColorization.enabled": false,
+	"editor.matchBrackets": "never",
+	"editor.glyphMargin": false,
+	"editor.guides.indentation": false,
+	"editor.lineNumbers": "off",
+	"editor.minimap.enabled": false,
+	"editor.unicodeHighlight.nonBasicASCII": false,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"extensions.ignoreRecommendations": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"window.commandCenter": false,
+	"window.menuBarVisibility": "toggle",
+	"workbench.activityBar.location": "hidden",
+	"workbench.editor.showTabs": "none",
+	"workbench.startupEditor": "none",
+	"workbench.colorTheme": "Fodder (rainglow)",
+	"workbench.editor.enablePreview": false,
+	"workbench.layoutControl.enabled": false,
+}
