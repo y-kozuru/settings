@@ -1,0 +1,109 @@
+/* <system section="theme" selected="evergreen"> */
+@import "/css/theme/evergreen/evergreen.css";
+/* </system> */
+
+:root {
+    --color-background: #f2f5f2;
+    --color-background-sub: #e7ebe7;
+    --color-text: #313932;
+    --color-underline: #919992;
+}
+
+html {
+    text-underline-offset: 0.3em;
+}
+
+/* フォント設定 */
+html, body, p {
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 2.5;
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.entry-title {
+    font-size: 180%;
+}
+
+/* 背景 */
+html, body, #container-inner {
+    background-color: var(--color-background);
+}
+
+/* リンク */
+a,
+.entry-content a,
+.entry .entry-inner p a,
+.entry .entry-inner .entry-content .table-of-contents a,
+.hatena-module-category .hatena-urllist li a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--color-underline);
+}
+
+/* テーブル */
+.entry-content .table-of-contents {
+    background-color: var(--color-background-sub);
+    line-height: 2.5;
+}
+
+/* 「読者になる」ボタン */
+.blog-controlls-subscribe-btn,
+.blog-controlls-subscribe-btn:hover {
+    background-color: var(--color-background-sub);
+    color: var(--color-text);
+}
+
+/* 「次のページ」ボタン */
+.pager a {
+    color: inherit;
+    transition: none;
+}
+
+.pager a:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-color: var(--color-underline);
+    border-bottom: none;
+}
+
+/* 画面幅が768px以下で表示されるブログタイトル */
+.blog-controlls,
+.blog-controlls-title {
+    background-color: var(--color-background);
+}
+
+.blog-controlls-title a,
+.blog-controlls-title a:visited {
+    color: var(--color-text);
+}
+
+/* スマホ向け設定 */
+@media screen and (max-width: 768px) {
+    html, body, p {
+        line-height: 2;
+    }
+    #blog-title {
+        display: none;
+    }
+}
+
+/* いらない要素を非表示にする */
+.categories,
+.entry-footer-section,
+.page-archive .categories a,
+.social-buttons {
+    display: none;
+}
+
+.entry-title,
+.hatena-urllist li a {
+    border-bottom: none;
+}
+
+#blog-title,
+.entry,
+.page-archive #main {
+    background: none;
+}
