@@ -6,7 +6,6 @@
     --color-background: #f2f5f2;
     --color-background-sub: #e7ebe7;
     --color-text: #313932;
-    --color-underline: #919992;
 }
 
 html {
@@ -14,16 +13,13 @@ html {
 }
 
 /* フォント設定 */
-html, body, p {
+html, body, p,
+.entry .entry-inner p {
     font-family: sans-serif;
-    letter-spacing: 0.1em;
-    line-height: 2.5;
-    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 17px;
     color: var(--color-text);
-}
-
-.entry-title {
-    font-size: 180%;
 }
 
 /* 背景 */
@@ -38,14 +34,21 @@ a,
 .entry .entry-inner .entry-content .table-of-contents a,
 .hatena-module-category .hatena-urllist li a {
     color: inherit;
-    text-decoration: underline;
-    text-decoration-color: var(--color-underline);
+}
+
+a:hover {
+    color: inherit;
 }
 
 /* テーブル */
 .entry-content .table-of-contents {
     background-color: var(--color-background-sub);
     line-height: 2.5;
+}
+
+.entry-content blockquote {
+    background-color: var(--color-background-sub);
+
 }
 
 /* 「読者になる」ボタン */
@@ -61,10 +64,12 @@ a,
     transition: none;
 }
 
+.hatena-module-category .hatena-urllist li a {
+    background: transparent;
+}
+
 .pager a:hover {
     color: var(--color-text);
-    text-decoration: underline;
-    text-decoration-color: var(--color-underline);
     border-bottom: none;
 }
 
@@ -77,6 +82,10 @@ a,
 .blog-controlls-title a,
 .blog-controlls-title a:visited {
     color: var(--color-text);
+}
+
+.hatena-module {
+    background-color: transparent;
 }
 
 /* スマホ向け設定 */
